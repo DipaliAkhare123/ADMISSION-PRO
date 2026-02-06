@@ -1,0 +1,89 @@
+/* General body and wallpaper fallback */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("wallpaper.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Background video wallpaper */
+#bgVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* makes sure it fills the screen without distortion */
+  transform: translate(-50%, -50%); /* centers the video */
+  z-index: -1;         /* keeps it behind content */
+}
+
+/* Container form */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Headline */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffd369;
+}
+
+/* Form labels and inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #00be9b;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d035f;
+  transform: scale(1.05);
+}
+
+/* Receipt styling */
+.receipt {
+  display: none; /* hidden by default */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.receipt-content {
+  position: relative;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-block;
+  color: #fff;
+  z-index: 1;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background video wallpaper -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="success.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="container" id="formContainer">
+    <h2>🎓 Admission Form</h2>
+    <form id="admissionForm">
+      <label>Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label>Course Applied:</label>
+      <select id="course" required>
+        <option value="">--Select--</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>MBA</option>
+        <option>B.Sc</option>
+      </select>
+
+      <label>Date of Birth:</label>
+      <input type="date" id="dob" required>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <!-- Receipt Section -->
+  <div class="receipt" id="receipt">
+    <div class="receipt-content">
+      <h3>✅ Admission Receipt</h3>
+      <p><b>Name:</b> <span id="rName"></span></p>
+      <p><b>Email:</b> <span id="rEmail"></span></p>
+      <p><b>Phone:</b> <span id="rPhone"></span></p>
+      <p><b>Course:</b> <span id="rCourse"></span></p>
+      <p><b>DOB:</b> <span id="rDob"></span></p>
+      <p style="margin-top:15px;color:#ffd369;">🎉 Your application has been successfully submitted!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
